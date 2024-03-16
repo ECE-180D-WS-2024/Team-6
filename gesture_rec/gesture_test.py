@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
 import time
 import json
+import numpy as np
 
 data = []
 
@@ -49,7 +50,10 @@ def on_message(client, userdata, message):
             # if idle:
             #     print("idle")
             else:
-                print("haha")
+                
+                print(np.random.randint(2))
+                
+
 
     except json.JSONDecodeError as e:
         print(f"Error decoding JSON: {e}")
