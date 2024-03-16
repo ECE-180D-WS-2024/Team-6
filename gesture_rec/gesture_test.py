@@ -73,6 +73,7 @@
 import paho.mqtt.client as mqtt
 import time
 import json
+import numpy as np
 
 data = []
 process_data = True  # Control flag to enable/disable data processing
