@@ -77,8 +77,8 @@ def speech_rec():
             print(f"Could not request results from Google Web Speech API; {e}")
 
 #game 
-bound_x = 5
-bound_y = 9
+bound_x = 9
+bound_y = 5
 
 catcher_x = 0
 catcher_y = 0
@@ -99,25 +99,31 @@ def main():
 
     while True: 
         #mimics the microphone that is always listening for verbal input
-        print("Would you like to start or stop the game? [start/stop]")
+        print("Would you like to start or stop the game? Press enter if neither. [start/stop/enter]")
         start_or_stop = input()
         if start_or_stop.lower() == "start": 
             pass
-        elif start_or_stop.lower() == "stop":
+        elif start_or_stop.lower() == "continue":
+            pass
+        elif start_or_stop.lower() == '/n':
+            print("Goodbye")
             exit()
         
         #mimics the catcher's movement 
         print("Enter a coordinate to move to. You can only move by one in any direction")
+        print("The limit of the grid is (4, 9)")
         print("You are currently at (" + str(catcher_x) + ", " +  str(catcher_y) + ")")
         catcher_move = input()
         catcher_x = int(catcher_move[0])
         catcher_y = int(catcher_move[2])
 
         #mimics distance measurement in localization 
-        dist = np.sqrt((catcher_x - target_x)^2 + (catcher_y - target_y)^2)
+        dist = np.sqrt((catcher_x - target_x)**2 + (catcher_y - target_y)**2)
 
+        #mimics the sound volume feedbakc
         if dist <= 1: 
             print("You are very close")
+            # what if the catcher continues playing and overlaps with the target??
         elif dist > 1 and dist <= 3: 
             print ("You are quite close")
         elif dist > 3 and dist <= 7: 
@@ -125,6 +131,7 @@ def main():
         else: 
             print("You are quite far")
         
+        #mimics direction recognition
         print("Would you like to perform a catch? [y/n]")
         does_catch = input()
         if does_catch == "y":
@@ -133,25 +140,29 @@ def main():
             if catch_dir == "up":
                 if (catcher_y + 1 != target_y) or dist > 1:
                     print("Sorry, you failed to catch the target")
-                elif dist < 1:
+                    print("The target was at (" + str(target_x) + ", " +  str(target_y) + ")")
+                elif dist <= 1:
                     print("Congratulations, you have caught the target!")
                 exit()
             elif catch_dir == "down":
                 if (catcher_y - 1 != target_y) or dist > 1:
                     print("Sorry, you failed to catch the target")
-                elif dist < 1:
+                    print("The target was at (" + str(target_x) + ", " +  str(target_y) + ")")
+                elif dist <= 1:
                     print("Congratulations, you have caught the target!")
                 exit()
             elif catch_dir == "left":
                 if (catcher_x - 1 != target_x) or dist > 1:
                     print("Sorry, you failed to catch the target")
-                elif dist < 1:
+                    print("The target was at (" + str(target_x) + ", " +  str(target_y) + ")")
+                elif dist <= 1:
                     print("Congratulations, you have caught the target!")
                 exit()
             elif catch_dir == "right":
                 if (catcher_x + 1 != target_x) or dist > 1:
                     print("Sorry, you failed to catch the target")
-                elif dist < 1:
+                    print("The target was at (" + str(target_x) + ", " +  str(target_y) + ")")
+                elif dist <= 1:
                     print("Congratulations, you have caught the target!")
                 exit()
         elif does_catch == 'n':
