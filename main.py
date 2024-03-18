@@ -7,6 +7,8 @@ import speech_recognition as sr
 import pygame
 import sys
 import os
+# from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+import pycaw
 
 #pygame initialization 
 # pygame.init()
@@ -74,6 +76,7 @@ def speech_rec():
             # API was unreachable or unresponsive
             print(f"Could not request results from Google Web Speech API; {e}")
 
+#game 
 bound_x = 5
 bound_y = 9
 
@@ -82,8 +85,6 @@ catcher_y = 0
 
 target_x = np.random.randint(0,bound_x)
 target_y = np.random.randint(0,bound_y)
-
-
 
 def main():
     global catcher_x
@@ -97,33 +98,64 @@ def main():
     print("Welcome to Invisible Bruin!")
 
     while True: 
-        print("Would you like to start or stop the game?")
+        #mimics the microphone that is always listening for verbal input
+        print("Would you like to start or stop the game? [start/stop]")
         start_or_stop = input()
         if start_or_stop.lower() == "start": 
             pass
         elif start_or_stop.lower() == "stop":
             exit()
         
+        #mimics the catcher's movement 
         print("Enter a coordinate to move to. You can only move by one in any direction")
         print("You are currently at (" + str(catcher_x) + ", " +  str(catcher_y) + ")")
         catcher_move = input()
         catcher_x = int(catcher_move[0])
         catcher_y = int(catcher_move[2])
 
+        #mimics distance measurement in localization 
         dist = np.sqrt((catcher_x - target_x)^2 + (catcher_y - target_y)^2)
+
+        if dist <= 1: 
+            print("You are very close")
+        elif dist > 1 and dist <= 3: 
+            print ("You are quite close")
+        elif dist > 3 and dist <= 7: 
+            print ("You are not that close")
+        else: 
+            print("You are quite far")
         
         print("Would you like to perform a catch? [y/n]")
         does_catch = input()
         if does_catch == "y":
             print("Choose a direction to perform a catch [up/right/down/left]")
             catch_dir = input()
-
-
-        if dist < 0.5: 
-            print("Congra")
-
-
-        
+            if catch_dir == "up":
+                if (catcher_y + 1 != target_y) or dist > 1:
+                    print("Sorry, you failed to catch the target")
+                elif dist < 1:
+                    print("Congratulations, you have caught the target!")
+                exit()
+            elif catch_dir == "down":
+                if (catcher_y - 1 != target_y) or dist > 1:
+                    print("Sorry, you failed to catch the target")
+                elif dist < 1:
+                    print("Congratulations, you have caught the target!")
+                exit()
+            elif catch_dir == "left":
+                if (catcher_x - 1 != target_x) or dist > 1:
+                    print("Sorry, you failed to catch the target")
+                elif dist < 1:
+                    print("Congratulations, you have caught the target!")
+                exit()
+            elif catch_dir == "right":
+                if (catcher_x + 1 != target_x) or dist > 1:
+                    print("Sorry, you failed to catch the target")
+                elif dist < 1:
+                    print("Congratulations, you have caught the target!")
+                exit()
+        elif does_catch == 'n':
+            continue   
 
 
 if __name__ == "__main__":
