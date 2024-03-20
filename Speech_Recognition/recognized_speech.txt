@@ -1,0 +1,111 @@
+Speech Recognition log
+2024-03-17 00:17:27 - You said: hello
+2024-03-17 00:17:34 - You said: exit
+2024-03-17 00:24:25 - Speech Recognition log
+
+2024-03-17 00:24:32 - Could not understand audio
+2024-03-17 00:24:35 - You said: hello
+2024-03-17 00:24:38 - You said: hello
+2024-03-17 00:24:42 - You said: exit
+2024-03-17 00:25:10 - Speech Recognition log
+
+2024-03-17 00:25:15 - Could not understand audio
+2024-03-17 00:25:22 - You said: hello
+2024-03-17 00:25:26 - You said: hello
+2024-03-17 00:25:33 - You said: stop
+2024-03-17 00:25:33 - Stop is recognized!
+2024-03-17 00:25:42 - You said: start
+2024-03-17 00:25:42 - Start is recognized!
+2024-03-17 00:25:45 - You said: play again
+2024-03-17 00:26:00 - You said: begin begin
+2024-03-17 00:26:00 - Start is recognized!
+2024-03-17 00:26:15 - You said: exit
+2024-03-17 00:28:53 - Speech Recognition log
+
+2024-03-17 00:39:13 - You said: stop
+2024-03-17 00:39:13 - Stop is recognized!
+2024-03-17 00:39:36 - You said: start stop start
+2024-03-17 00:39:36 - Start is recognized!
+2024-03-17 00:39:36 - Stop is recognized!
+2024-03-17 00:39:39 - You said: stop
+2024-03-17 00:39:39 - Stop is recognized!
+2024-03-17 00:39:44 - Could not understand audio
+2024-03-17 00:39:58 - Could not understand audio
+2024-03-17 00:40:03 - Could not understand audio
+2024-03-17 00:40:09 - Could not understand audio
+2024-03-17 00:40:12 - You said: stop
+2024-03-17 00:40:12 - Stop is recognized!
+2024-03-17 00:40:30 - You said: start start
+2024-03-17 00:40:30 - Start is recognized!
+2024-03-17 00:40:37 - Could not understand audio
+2024-03-17 00:40:47 - Could not understand audio
+2024-03-17 00:40:55 - Could not understand audio
+2024-03-17 00:41:01 - Could not understand audio
+2024-03-17 00:41:05 - You said: exit
+2024-03-17 00:47:49 - Speech Recognition log
+
+2024-03-17 00:47:55 - Stop is recognized!
+2024-03-17 00:48:08 - Start is recognized!
+2024-03-17 00:48:14 - Google Web Speech API could not understand audio
+2024-03-17 00:48:20 - Google Web Speech API could not understand audio
+2024-03-17 00:48:23 - Stop is recognized!
+2024-03-17 00:48:31 - Start is recognized!
+2024-03-17 00:48:35 - Start is recognized!
+2024-03-17 00:48:38 - Start is recognized!
+2024-03-17 00:48:46 - Google Web Speech API could not understand audio
+2024-03-17 00:49:11 - Start is recognized!
+2024-03-17 00:49:26 - Stop is recognized!
+2024-03-17 00:49:46 - Start is recognized!
+2024-03-17 00:49:50 - Start is recognized!
+2024-03-17 00:49:54 - Stop is recognized!
+2024-03-17 00:50:09 - Start is recognized!
+2024-03-17 00:50:14 - Google Web Speech API could not understand audio
+2024-03-17 00:50:24 - Start is recognized!
+2024-03-17 00:50:27 - Start is recognized!
+2024-03-17 00:50:34 - Start is recognized!
+2024-03-17 00:50:40 - Start is recognized!
+2024-03-17 00:50:43 - Start is recognized!
+2024-03-17 00:50:48 - Stop is recognized!
+2024-03-17 00:50:52 - Stop is recognized!
+2024-03-17 00:51:08 - Start is recognized!
+2024-03-17 00:51:20 - Stop is recognized!
+2024-03-17 00:51:27 - Stop is recognized!
+2024-03-17 00:51:39 - Start is recognized!
+2024-03-19 16:22:04 - Speech Recognition log
+
+2024-03-19 16:22:13 - Google Web Speech API could not understand audio
+2024-03-19 16:22:17 - Stop is recognized!
+2024-03-19 16:22:23 - Google Web Speech API could not understand audio
+2024-03-19 16:22:28 - Google Web Speech API could not understand audio
+2024-03-19 16:22:34 - Google Web Speech API could not understand audio
+2024-03-19 16:22:46 - Google Web Speech API could not understand audio
+2024-03-19 16:22:50 - Google Web Speech API could not understand audio
+2024-03-19 16:23:05 - Stop is recognized!
+2024-03-19 16:23:14 - Google Web Speech API could not understand audio
+2024-03-19 16:23:18 - Start is recognized!
+2024-03-19 16:23:25 - Start is recognized!
+2024-03-19 16:23:34 - Start is recognized!
+2024-03-19 16:23:38 - Google Web Speech API could not understand audio
+2024-03-19 16:23:42 - Google Web Speech API could not understand audio
+2024-03-19 16:23:49 - Stop is recognized!
+2024-03-19 16:23:53 - Stop is recognized!
+2024-03-19 16:23:57 - Stop is recognized!
+2024-03-19 16:24:03 - Google Web Speech API could not understand audio
+2024-03-19 16:24:10 - Stop is recognized!
+2024-03-19 16:24:23 - Start is recognized!
+2024-03-19 16:24:27 - Google Web Speech API could not understand audio
+2024-03-19 16:24:32 - Start is recognized!
+2024-03-19 16:24:37 - Google Web Speech API could not understand audio
+2024-03-19 16:24:44 - Start is recognized!
+2024-03-19 16:24:53 - Start is recognized!
+2024-03-19 16:24:58 - Stop is recognized!
+2024-03-19 16:25:02 - Google Web Speech API could not understand audio
+2024-03-19 16:25:08 - Google Web Speech API could not understand audio
+2024-03-19 16:25:12 - Google Web Speech API could not understand audio
+2024-03-19 16:25:23 - Start is recognized!
+2024-03-19 16:25:34 - Stop is recognized!
+2024-03-19 16:25:38 - Stop is recognized!
+2024-03-19 16:25:44 - Stop is recognized!
+2024-03-19 16:25:49 - Google Web Speech API could not understand audio
+2024-03-19 16:25:53 - Stop is recognized!
+2024-03-19 16:25:57 - Google Web Speech API could not understand audio
