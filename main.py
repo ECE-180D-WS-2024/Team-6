@@ -103,10 +103,10 @@ def main():
         start_or_stop = input()
         if start_or_stop.lower() == "start": 
             pass
-        elif start_or_stop.lower() == "continue":
-            pass
-        elif start_or_stop.lower() == '/n':
-            print("Goodbye")
+        # elif start_or_stop.lower() == "continue":
+        #     pass
+        elif start_or_stop.lower() == "stop":
+            print("Goodbye.")
             exit()
         
         #mimics the catcher's movement 
@@ -120,7 +120,7 @@ def main():
         #mimics distance measurement in localization 
         dist = np.sqrt((catcher_x - target_x)**2 + (catcher_y - target_y)**2)
 
-        #mimics the sound volume feedbakc
+        #mimics the sound volume feedback
         if dist <= 1: 
             print("You are very close")
             # what if the catcher continues playing and overlaps with the target??
